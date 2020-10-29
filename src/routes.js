@@ -11,11 +11,11 @@ import {
               <Switch>
 
                   <Route exact path='/'>
-                      <div>Home test again</div> 
+                      <div>Home</div> 
                   </Route>
 
                   <Route path='/Resume'>
-                      <div>Resume test again</div>
+                      <div>Resume</div>
                   </Route>
 
               </Switch>
