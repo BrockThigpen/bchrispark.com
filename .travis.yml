@@ -13,4 +13,4 @@ before_deploy:
   - npm install netlify-cli -g
   - npm run build
 deploy:
-  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
+  script: netlify deploy -s $NET_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
