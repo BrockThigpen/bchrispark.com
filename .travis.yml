@@ -6,6 +6,8 @@ branches:
 cache:
   directories:
     - node_modules
+env:
+  - CI = false
 script:
   - node -v
 before_deploy:
