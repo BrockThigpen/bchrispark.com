@@ -11,6 +11,6 @@ before_deploy:
   - npm run build
 deploy:
   provider: script
-  script: netlify deploy -s $NET_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
+  script: netlify deploy -s $NET_SITE_ID -a $NETLIFY_ACCESS_TOKEN -p --dir ./build
   on:
     all_branches: true
