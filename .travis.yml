@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - node
+deploy:
+  provider: netlify
+  site: NET_SITE_ID
+  dir: '_build/'
