@@ -4,7 +4,4 @@ Personal Website
 
 react
 netlify
-
-j
-fuck
-ugh
+travis
