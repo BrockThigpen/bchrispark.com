@@ -13,6 +13,4 @@ deploy:
   provider: script
   script: netlify deploy -s $NET_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
   on:
-    branches:
-      only:
-        - main
+    all_branches: true
