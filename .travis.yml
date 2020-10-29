@@ -8,14 +8,9 @@ cache:
     - node_modules
 env:
   - CI = false
-script:
-  - node -v
 before_deploy:
   - npm i
+  - npm install netlify-cli -g
   - npm run build
 deploy:
-  provider: script
-  script: node -v
-  skip_cleanup: true
-  on:
-    branch: main
+  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
