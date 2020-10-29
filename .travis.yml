@@ -7,3 +7,6 @@ branches:
 cache:
   directories:
     - node_modules
+before_deploy:
+  - npm i
+  - npm run build
