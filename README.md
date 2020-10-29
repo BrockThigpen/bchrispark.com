@@ -1,4 +1,5 @@
-# bchrispark.com
+# https://bchrispark.netlify.app/
+
 
 Personal Website
 
