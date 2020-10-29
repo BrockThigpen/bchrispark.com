@@ -1,8 +1,5 @@
 language: node_js
 node_js: node
-branches:
-  only:
-    - main
 cache:
   directories:
     - node_modules
@@ -14,3 +11,7 @@ before_deploy:
   - npm run build
 deploy:
   script: netlify deploy -s $NET_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p --dir ./build
+  on:
+    branches:
+      only:
+        - main
