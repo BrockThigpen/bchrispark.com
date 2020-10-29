@@ -8,8 +8,8 @@ cache:
     - node_modules
 env:
   - CI = false
+script: 'true'
 before_deploy:
-  - npm i
   - npm install netlify-cli -g
   - npm run build
 deploy:
