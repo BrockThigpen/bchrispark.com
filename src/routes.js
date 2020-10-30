@@ -4,6 +4,7 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
+import Resume from './pages/Resume';
 
   export default function App() {
       return (
@@ -15,7 +16,7 @@ import {
                   </Route>
 
                   <Route path='/Resume'>
-                      <div>Resume</div>
+                      <Resume/>
                   </Route>
 
               </Switch>
