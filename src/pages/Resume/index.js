@@ -1,4 +1,5 @@
 import React from 'react';
+import SwapPagesButton from '../../components/SwapPages';
 
 export default function ResumePage () {
     const style = {
@@ -9,8 +10,11 @@ export default function ResumePage () {
         alignItems: "center"
     }
     return(
-        <div style={style}>
-            <img alt={'fat arthur'} src={'https://bit.ly/3kLsVGg'}/>
-        </div>
+        <>
+           <SwapPagesButton />
+            <div style={style}>
+                <img alt={'fat arthur'} src={'https://bit.ly/3kLsVGg'}/>
+            </div>
+        </>
     )
 }

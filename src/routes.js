@@ -5,17 +5,23 @@ import {
     Route,
   } from "react-router-dom";
 import Resume from './pages/Resume';
+import SwapPagesButton from './components/SwapPages'
 
-  export default function App() {
+export const PATHS = {
+    home: '/',
+    resume: '/resume'
+}
+
+export default function App() {
       return (
           <Router>
               <Switch>
-
-                  <Route exact path='/'>
+                  <Route exact path={PATHS.home}>
                       <div>Home</div> 
+                      <SwapPagesButton />
                   </Route>
 
-                  <Route path='/Resume'>
+                  <Route path={PATHS.resume}>
                       <Resume/>
                   </Route>
 
