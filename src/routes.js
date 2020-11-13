@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,28 +7,29 @@ import {
 import Resume from './pages/Resume';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-
-
-export const PATHS = {
-    home: '/',
-    resume: '/resume',
-    portfolio: '/portfolio'
-}
+import MainLayout from './Layouts/MainLayout'
+import {PATHS} from './paths';
 
 export default function App() {
       return (
         <Router>
             <Switch>
             <Route exact path={PATHS.home}>
-                    <Home/>
+                    <MainLayout>
+                        <Home/>
+                    </MainLayout>
                 </Route>
 
                 <Route path={PATHS.resume}>
+                <MainLayout>
                     <Resume />
+                    </MainLayout>
                 </Route>
 
                 <Route path={PATHS.portfolio}>
+                <MainLayout>
                     <Portfolio />
+                    </MainLayout>
                 </Route>
             </Switch>
         </Router>
