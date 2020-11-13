@@ -1,12 +1,9 @@
 import React from 'react';
 
-export default function PortfolioPage () {
-
-    return(
-        <>
-            <div >
-                Portfolio page
-            </div>
-        </>
-    )
+export default function PortfolioPage() {
+  return (
+    <>
+      <div>Portfolio page</div>
+    </>
+  );
 }
